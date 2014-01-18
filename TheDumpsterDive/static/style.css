@@ -18,9 +18,27 @@ div{
     border-style: solid;
 }
 #header{
-    font-color:white;
+    color:white;
     background-color: #0066FF;
 }
 #search-bar{
     background-color: #0066FF;
+}
+
+#map{
+    background-color: white;
+
+}
+
+#main{
+    position:absolute;
+    width:80%;
+    left: 10%;
+}
+
+#footer{
+    position: absolute;
+    width:80%;
+    left:10%;
+    bottom:0;
 }
