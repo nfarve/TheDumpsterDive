@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <link href="{{ STATIC_URL }}/style.css" rel="stylesheet" type="text/css" media="screen" />
     <head>
@@ -6,32 +7,42 @@
     </head>
 
     <body>
-        <div id='header'>
-        <h1>The Dumpster Dive</h1>
+        <div id="header">
+            <div id="logoL">
+                <img src="{%static 'Logo.png' %}" alt="logo" height="100"/>
+            </div>
+            <div id="logoR">
+                <img src="{%static 'Logo_reverse.png' %}" alt="logo" height="100"/>
+            </div>
+        
+            <h1>The Dumpster Dive</h1>
+        </div>
         <div id='login'>
-
+            <img src="{%static 'Log_in_icon.png' %}" alt="login" height="30"/>
+            <img src="{%static 'Sign_up.png' %}" alt="sign-up" height="30"/>
         </div>
-        </div>
+       
         <div id="search-bar">
-
+            <p>Something</p>
         </div>
   
      
 
 
-       <div id='main'>
-        <div id='map'>
-        <h3>What is for Dinner Tonight?</h3>
-        </div>
-        <div id='explain'>
-            <p>Waste Reclaimation</p>
-        </div>
+       <div id="main">
+            <div id="map">
+                <h3>What's for Dinner?</h3>
+            </div>
+            <div id="explain">
+                <p>Waste Reclaimation</p>
+            </div>
 
-       </div>
+        </div>
        <div id="footer">
         <ul>
-            <li> <a href="/rango/about/">About Us</a><br/>
-            <li><a href="/rango/about/">Contact</a><br />
+            <li> <a href="/TheDive/about/">About Us</a><br/></li>
+            <li><a href="/TheDive/about/">Contact</a><br /></li>
+        </ul>
        </div> 
     </body>
 

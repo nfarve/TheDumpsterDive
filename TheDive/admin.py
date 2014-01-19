@@ -5,3 +5,5 @@ from TheDive.models import Dumpster, FoodGroup, Food
 admin.site.register(Dumpster)
 admin.site.register(FoodGroup)
 admin.site.register(Food)
+
+
