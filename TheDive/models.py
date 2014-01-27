@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Dumpster(models.Model):
     latitude = models.DecimalField(max_digits=10, decimal_places=6)
@@ -27,3 +28,15 @@ class Food(models.Model):
 
     def __unicode__(self):
         return self.name
+
+class UserProfile(models.Model):
+    # This line links the UserProfile to a User model instance
+    user = models.OneToOneField(User)
+
+    # The additional attributes we wish to include.
+    website = models.URLField(blank=True)
+    picture = models.ImageField(upload_to='profile_images', blank=True)
+
+    # Override the __unicode__() method to return out something meaningful!
+    def __unicode__(self):
+        return self.user.username
