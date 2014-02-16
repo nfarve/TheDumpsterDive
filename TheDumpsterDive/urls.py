@@ -2,12 +2,10 @@ from django.conf.urls import patterns, include, url
 from django.conf import settings
 
 from django.contrib import admin
-from TheDive.models import Category, Page, User
+
 admin.autodiscover()
 
-admin.site.register(Category)
-admin.site.register(Page)
-admin.site.register(User)
+
 
 urlpatterns = patterns('',
     # Examples:

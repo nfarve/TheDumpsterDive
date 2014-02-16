@@ -1,7 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
-from TheDive.models import Category, Page
+# Register your models here.from TheDive.models import Category, Page
 
 
 from TheDive.models import Dumpster, FoodGroup, Food

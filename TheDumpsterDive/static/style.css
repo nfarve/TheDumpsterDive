@@ -51,12 +51,12 @@ font-size:12px;
 }
 #logoL{
     position: absolute;
-   
+   top:18%;
     left:20%;
 }
 #logoR{
     position: absolute;
-   
+   top:18%;
     left:70%;
 }
 #login {
@@ -68,9 +68,20 @@ font-size:12px;
 
 #search-bar{
     position: absolute;
-    top:10%;
+    top:25%;
     background-color: #0066FF;
+    color:white;
+    width:80%;
+    left:10.5%;
+    border-radius: 5px;
+
 }
+.Search{
+    color:#383838;
+    font-size: 100%;
+    padding-left: 130px;
+}
+
 #main{
     position:absolute;
     width:80%;
@@ -79,14 +90,14 @@ font-size:12px;
     background-color:white;
     border-radius: 5px;
     padding:5px;
-    top:40%;
+    top:35%;
 }
 
 #map{
     background-color: white;
     position: absolute;
     width:98%;
-    top:10%;
+    
     border-radius: 5px;
 
    
@@ -96,19 +107,16 @@ font-size:12px;
 #explain{
     position: absolute;
     background-color: white;
-    top:40%;
+    top:75%;
     width: 98%;
-    
+    padding: 5px;
     border-radius: 5px; 
 
 }
 
 
 #footer{
-    position: absolute;
-    width:80%;
-    left:10%;
-    height:10%;
+    position:fixed;
     bottom:0;
 }
 
