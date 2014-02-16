@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<link href="{{ STATIC_URL }}/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <head>
+        <title>Dumpster Diving Made Better - home</title>
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="logoL">
+                <img src="{%static 'Logo.png' %}" alt="logo" height="100"/>
+            </div>
+            <div id="logoR">
+                <img src="{%static 'Logo_reverse.png' %}" alt="logo" height="100"/>
+            </div>
+        
+            <h1>The Dumpster Dive</h1>
+        </div>
+        <div id='login'>
+            <a href="/TheDive/login/"><img src="{%static 'Log_in_icon.png' %}" alt="login" height="30"/></a>
+            <a href="/TheDive/register/"><img src="{%static 'Sign_up.png' %}" alt="sign-up" height="30"/></a>
+        </div>
+       
+        <div id="search-bar">
+            <p>Something</p>
+        </div>
+
+       <div id="main">
+            <div id="map">
+                <h3>What's for Dinner?</h3>
+            </div>
+            <div id="greeting">
+                {% if user.is_authenticated %}
+                <h1>Welcome, {{ user.username }}!</h1>
+                {% else %}
+                <h1>Hello, anonymous user</h1>
+                {% endif %}
+            </div>
+            <div id="explain">
+                <p>Waste Reclaimation</p>
+            </div>
+
+        </div>
+       <div id="footer">
+        <ul>
+            <li> <a href="/TheDive/about/">About Us</a><br/></li>
+            <li><a href="/TheDive/about/">Contact</a><br /></li>
+        </ul>
+       </div> 
+    </body>
+
+</html>
